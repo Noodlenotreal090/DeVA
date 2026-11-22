@@ -34,7 +34,7 @@ import kotlin.time.Duration.Companion.seconds
  * - Efficient caching of `GenerativeModel` instances to reduce overhead.
  * - Structured JSON output enforcement using `response_schema`.
  *
- * @property modelName The name of the Gemini model to use (e.g., "gemini-3.8-flash").
+ * @property modelName The name of the Gemini model to use (e.g., "gemini-3.5-flash").
  * @property apiKeyManager An instance of [ApiKeyManager] to handle API key retrieval.
  * @property maxRetry The maximum number of times to retry a failed API call.
  */
@@ -203,7 +203,7 @@ class GeminiApi(
         } catch (e: Exception) {
             Log.e(TAG, "API call failed with error: ${e.message}", e)
             com.deva.voice.overlay.OverlayDispatcher.show(
-                text = "❌ API Error: ${e.message?.take(50)}",
+                text = "❌ API Error: ${e.message?.take(400)}",
                 priority = com.deva.voice.overlay.OverlayPriority.CAPTION,
                 duration = 4000L
             )

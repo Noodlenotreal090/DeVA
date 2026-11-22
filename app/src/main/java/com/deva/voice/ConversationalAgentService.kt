@@ -726,7 +726,7 @@ class ConversationalAgentService : Service() {
 //        // We need an instance of GeminiApi to call it.
 //        // NOTE: You might need to adjust how you get your GeminiApi instance.
 //        // For now, we'll assume we can create one or access it.
-//        val geminiApi = GeminiApi("gemini-3.8-flash", ApiKeyManager, 2)
+//        val geminiApi = GeminiApi("gemini-3.5-flash", ApiKeyManager, 2)
 //
 //        val searchResult = geminiApi.generateGroundedContent(searchPrompt)
 //        Log.d("CONVO_SEARCH", searchResult.toString())

@@ -49,7 +49,7 @@ class ClarificationAgent {
             val responseJson = withContext(Dispatchers.IO) {
                 GeminiApi.generateContent(
                     chat = apiChat,
-                    modelName = "gemini-3.8-flash", // Using a fast, modern model for this task.
+                    modelName = "gemini-3.5-flash", // Using a fast, modern model for this task.
                     context = context
                 )
             }
