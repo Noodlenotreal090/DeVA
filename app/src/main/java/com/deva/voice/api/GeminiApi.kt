@@ -60,7 +60,7 @@ object GeminiApi {
     suspend fun generateContent(
         chat: List<Pair<String, List<Any>>>,
         images: List<Bitmap> = emptyList(),
-        modelName: String = "gemini-2.5-flash",
+        modelName: String = "gemini-3.8-flash",
         maxRetry: Int = 4,
         context: Context? = null
     ): String? {
